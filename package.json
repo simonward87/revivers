@@ -1,0 +1,13 @@
+{
+  "name": "revivers",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "revivers.js",
+  "scripts": {
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": [],
+  "author": "Simon Ward",
+  "license": "MIT",
+  "description": "Reviver function generators for transforming values during JSON parsing."
+}
