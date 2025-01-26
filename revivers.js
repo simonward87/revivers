@@ -4,7 +4,7 @@
  * regexDateTime is for validating date time strings. It is declared in the outer scope so it doesn't need to be initialized on every call to the reviver
  */
 export const regexDateTime =
-  /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,3})Z$/;
+  /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,3})?Z$/;
 
 /**
  * dateTime generates a reviver function, used to transform date time strings into Date objects during JSON parsing. This allows them to be easily formatted or manipulated as required, with suitable timezone adjustment for the client. It takes the keys to values which contain date time strings. If no keys are passed, EVERY value will be checked against the regexp in an attempt to deduce which values should be transformed. This can inhibit performance when operating on large JSON objects.
